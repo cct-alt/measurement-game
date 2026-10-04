@@ -1,0 +1,86 @@
+/* css/style.css */
+.no-select {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.shake {
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.numpad-btn {
+    background-color: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 1rem;
+    padding: 0.7rem 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #334155;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s;
+}
+
+.numpad-btn:active {
+    transform: scale(0.95);
+    background-color: #e2e8f0;
+}
+
+.border-mod2 {
+    border-color: #99f6e4;
+}
+
+.border-mod3 {
+    border-color: #fde68a;
+}
+
+.border-mod4 {
+    border-color: #fecdd3;
+}
+
+.border-mod5 {
+    border-color: #a5f3fc;
+}
+
+.border-mod6 {
+    border-color: #e9d5ff;
+}
