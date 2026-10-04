@@ -1,4 +1,14 @@
 /* css/style.css */
+
+/* 修正 iPad Safari 頂部與底部工具列遮擋問題 */
+html, body {
+    height: 100%;
+    /* 舊版 iOS Safari 備用方案 */
+    height: -webkit-fill-available; 
+    /* 新版 iOS Safari 完美動態高度方案 */
+    height: 100dvh; 
+}
+
 .no-select {
     -webkit-user-select: none;
     user-select: none;
